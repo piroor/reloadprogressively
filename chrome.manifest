@@ -1,0 +1,6 @@
+content	reloadprogressively	jar:chrome/reloadprogressively.jar!/content/reloadprogressively/
+
+overlay	chrome://browser/content/browser.xul	chrome://reloadprogressively/content/reloadprogressively.xul
+
+locale	reloadprogressively	en-US	jar:chrome/reloadprogressively.jar!/locale/en-US/reloadprogressively/
+locale	reloadprogressively	ja	jar:chrome/reloadprogressively.jar!/locale/ja/reloadprogressively/

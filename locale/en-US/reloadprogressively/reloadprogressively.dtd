@@ -1,0 +1,6 @@
+<!ENTITY config.title "Reload Tabs Progressively Configuration">
+
+<!ENTITY config.tab.general "General">
+
+<!ENTITY config.max.before "Reload ">
+<!ENTITY config.max.after  " tabs in a time">
