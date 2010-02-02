@@ -26,8 +26,8 @@ var ProgressiveReloadService = {
 	{
 		aTabBrowser.reloadTab = function reloadTab(aTab) {
 			if (ProgressiveReloadService.canStartReload(aTab)) {
-				ProgressiveReloadService.readyToReload(aTab);
-				aTab.linkedBrowser.reload();
+				if (ProgressiveReloadService.readyToReload(aTab));
+					aTab.linkedBrowser.reload();
 			}
 			else {
 				ProgressiveReloadService.reloadWithDelay(aTab);
@@ -111,6 +111,20 @@ var ProgressiveReloadService = {
 		aTab.linkedBrowser.__reload__linkedTab = aTab;
 		aTab.linkedBrowser.addEventListener('DOMContentLoaded', this, false);
 		aTab.linkedBrowser.addEventListener('error', this, false);
+
+		return !this.ensureLoaded(aTab);
+	},
+
+	ensureLoaded : function(aTab) 
+	{
+		// for BarTap ( https://addons.mozilla.org/firefox/addon/67651 )
+		if (aTab.getAttribute('ontap') == 'true') {
+			var event = document.createEvent('Event');
+			event.initEvent('BarTapLoad', true, true);
+			aTab.linkedBrowser.dispatchEvent(event);
+			return true;
+		}
+		return false;
 	},
 
 	reloadWithDelay : function(aTab)
