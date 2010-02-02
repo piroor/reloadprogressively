@@ -7,7 +7,7 @@
                    em:name="Reload Tabs Progressively"
                    em:version="0.1.2010020201"
                    em:creator="SHIMODA Hiroshi"
-                   em:description="Limits reloading of tabs in a time."
+                   em:description="Limits number of reloaded tabs in a time."
                    em:homepageURL="http://piro.sakura.ne.jp/xul/reloadprogressively/"
                    em:optionsURL="chrome://reloadprogressively/content/config.xul">
 <!--
@@ -21,7 +21,7 @@
     <em:localized>
       <RDF:Description em:locale="en-US"
                        em:name="Reload Tabs Progressively"
-                       em:description="Limits reloading of tabs in a time."
+                       em:description="Limits number of reloaded tabs in a time."
                        em:homepageURL="http://piro.sakura.ne.jp/xul/_reloadprogressively.html.en"
                        em:creator="SHIMODA Hiroshi">
       </RDF:Description>
