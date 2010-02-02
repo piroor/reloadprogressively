@@ -1,6 +1,6 @@
-<!ENTITY config.title "Reload Tabs Progressively‚ÌÝ’è">
+<!ENTITY config.title "Reload Tabs Progressivelyã®è¨­å®š">
 
-<!ENTITY config.tab.general "‘S”Ê">
+<!ENTITY config.tab.general "å…¨èˆ¬">
 
-<!ENTITY config.max.before "“¯Žž‚ÉÄ“Ç‚Ýž‚Ý‚·‚éƒ^ƒu‚ÌŒÂ”‚ð">
-<!ENTITY config.max.after  "ŒÂ‚Ü‚Å‚É§ŒÀ‚·‚é">
+<!ENTITY config.max.before "åŒæ™‚ã«å†èª­ã¿è¾¼ã¿ã™ã‚‹ã‚¿ãƒ–ã®å€‹æ•°ã‚’">
+<!ENTITY config.max.after  "å€‹ã¾ã§ã«åˆ¶é™ã™ã‚‹">
