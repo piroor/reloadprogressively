@@ -7,20 +7,20 @@
 
 <prefpane id="prefpane-general" label="&config.tab.general;" flex="1">
 	<preferences>
-		<preference id="reloadprogressively@piro.sakura.ne.jp.max"
-			name="reloadprogressively@piro.sakura.ne.jp.max"
+		<preference id="extensions.reloadprogressively@piro.sakura.ne.jp.max"
+			name="extensions.reloadprogressively@piro.sakura.ne.jp.max"
 			type="int"/>
 	</preferences>
 
 	<hbox align="center">
 		<label value="&config.max.before;"
-			control="reloadprogressively@piro.sakura.ne.jp.max-textbox"/>
-		<textbox id="reloadprogressively@piro.sakura.ne.jp.max-textbox"
-			preference="reloadprogressively@piro.sakura.ne.jp.max"
+			control="extensions.reloadprogressively@piro.sakura.ne.jp.max-textbox"/>
+		<textbox id="extensions.reloadprogressively@piro.sakura.ne.jp.max-textbox"
+			preference="extensions.reloadprogressively@piro.sakura.ne.jp.max"
 			style="width: 5em;"
 			type="number" min="0" increment="1"/>
 		<label value="&config.max.after;"
-			control="reloadprogressively@piro.sakura.ne.jp.max-textbox"/>
+			control="extensions.reloadprogressively@piro.sakura.ne.jp.max-textbox"/>
 	</hbox>
 </prefpane>
 
