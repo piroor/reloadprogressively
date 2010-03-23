@@ -67,13 +67,15 @@ var ProgressiveReloadService = {
 
 	getTabBrowserFromChild : function(aTab)
 	{
-		return aTab.ownerDocument.evaluate(
-					'ancestor-or-self::*[local-name()="tabbrowser"][1]',
-					aTab,
-					null,
-					XPathResult.FIRST_ORDERED_NODE_TYPE,
-					null
-				).singleNodeValue;
+		var b = aTab.ownerDocument.evaluate(
+				'ancestor-or-self::*[local-name()="tabbrowser"] | '+
+				'ancestor-or-self::*[local-name()="tabs"][@tabbrowser]',
+				aTab,
+				null,
+				XPathResult.FIRST_ORDERED_NODE_TYPE,
+				null
+			).singleNodeValue;
+		return (b && b.tabbrowser) || b;
 	},
 
 	getFirstPendingTab : function(aTabBrowser)
