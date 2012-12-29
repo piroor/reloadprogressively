@@ -1,3 +1,3 @@
 copy buildscript\makexpi.sh .\
-bash makexpi.sh reloadprogressively version=0
+bash makexpi.sh -n reloadprogressively -o
 del makexpi.sh
