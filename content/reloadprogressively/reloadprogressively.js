@@ -35,7 +35,7 @@ var ProgressiveReloadService = {
 		};
 
 		aTabBrowser.reloadAllTabs = function reloadAllTabs() {
-			Array.slice(this.mTabContainer.childNodes).forEach(this.reloadTab, this);
+			Array.slice(this.tabContainer.childNodes).forEach(this.reloadTab, this);
 		};
 	},
 
@@ -82,7 +82,7 @@ var ProgressiveReloadService = {
 	{
 		return aTabBrowser.ownerDocument.evaluate(
 					'descendant::*[@pending-reload="true"][1]',
-					aTabBrowser.mTabContainer,
+					aTabBrowser.tabContainer,
 					null,
 					XPathResult.FIRST_ORDERED_NODE_TYPE,
 					null
@@ -93,7 +93,7 @@ var ProgressiveReloadService = {
 	{
 		return aTabBrowser.ownerDocument.evaluate(
 					'count(descendant::*[@reloading="true"])',
-					aTabBrowser.mTabContainer,
+					aTabBrowser.tabContainer,
 					null,
 					XPathResult.NUMBER_TYPE,
 					null
